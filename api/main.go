@@ -13,6 +13,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 
 	router.ServeHTTP(w, r)
 }
+//
 
 func HelloHandler(c *gin.Context) {
 	c.String(http.StatusOK, "Hello from Golang with Gin on Vercel!")
